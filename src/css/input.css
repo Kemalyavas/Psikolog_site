@@ -133,7 +133,7 @@
 
   /* Footer */
   .footer {
-    @apply bg-cream-200 py-12;
+    @apply bg-brand-header py-8;
   }
 
   .footer-title {

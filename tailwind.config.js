@@ -7,6 +7,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        // Brand colors based on reference design
+        brand: {
+          header: '#efe5da', // Warm beige for header
+          text: '#1a1a1a',
+          accent: '#d4c5b5', // Darker beige for borders/accents
+        },
         // Cream/beige background colors (matching reference)
         cream: {
           50: '#FDFCFA',
