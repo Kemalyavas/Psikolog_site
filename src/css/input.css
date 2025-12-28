@@ -8,7 +8,7 @@
   }
   
   body {
-    @apply font-sans text-dark bg-white antialiased;
+    @apply font-sans text-dark bg-cream-100 antialiased;
     animation: pageLoad 0.5s ease-out;
   }
 }
@@ -133,15 +133,15 @@
 
   /* Footer */
   .footer {
-    @apply bg-brand-header py-8 text-white;
+    @apply bg-cream-100 py-8 text-dark;
   }
 
   .footer-title {
-    @apply text-brand-gold font-semibold mb-4;
+    @apply text-dark font-semibold mb-4;
   }
 
   .footer-link {
-    @apply text-gray-300 hover:text-brand-gold transition-colors text-sm flex items-center gap-2;
+    @apply text-dark-600 hover:text-dark transition-colors text-sm flex items-center gap-2;
   }
 
   /* WhatsApp button */

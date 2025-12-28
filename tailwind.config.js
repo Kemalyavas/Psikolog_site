@@ -9,10 +9,10 @@ module.exports = {
       colors: {
         // Brand colors based on reference design
         brand: {
-          header: '#3E2244', // Slightly darker purple
+          header: '#FAF7F2', // Soft cream (reference-like)
           text: '#1a1a1a',
-          accent: '#B89B5E', // Gold from business card
-          gold: '#B89B5E',   // Explicit gold color
+          accent: '#E0D5C8', // Subtle border/line tone
+          gold: '#1a1a1a',   // Re-used for dark headline/logo text
         },
         // Cream/beige background colors (matching reference)
         cream: {
@@ -32,9 +32,9 @@ module.exports = {
         },
         // Coral/salmon accent for bullet points
         coral: {
-          DEFAULT: '#E07B5D',
-          light: '#F09B82',
-          dark: '#C45A3C',
+          DEFAULT: '#1a1a1a',
+          light: '#333333',
+          dark: '#000000',
         },
         // WhatsApp green
         whatsapp: '#25D366',
