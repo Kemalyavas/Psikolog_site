@@ -9,7 +9,7 @@ module.exports = {
       colors: {
         // Brand colors based on reference design
         brand: {
-          header: '#2E1A32', // Deep purple from business card
+          header: '#3E2244', // Slightly darker purple
           text: '#1a1a1a',
           accent: '#B89B5E', // Gold from business card
           gold: '#B89B5E',   // Explicit gold color
