@@ -1,0 +1,12 @@
+# Robots.txt for Psk. Merve Website
+# https://www.example.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location (update with actual domain)
+Sitemap: https://www.example.com/sitemap.xml
+
+# Disallow admin or private areas if any
+# Disallow: /admin/
+# Disallow: /private/

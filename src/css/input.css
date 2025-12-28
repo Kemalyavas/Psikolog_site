@@ -1,0 +1,234 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-dark bg-white antialiased;
+    animation: pageLoad 0.5s ease-out;
+  }
+}
+
+/* Page load animation */
+@keyframes pageLoad {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer components {
+  /* Container */
+  .container-custom {
+    @apply max-w-content mx-auto px-6 lg:px-8;
+  }
+
+  /* Section spacing */
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  /* Logo - Modern professional style */
+  .logo-script {
+    @apply text-xl md:text-2xl tracking-wide;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: #1a1a1a;
+  }
+
+  /* Navigation link */
+  .nav-link {
+    @apply text-dark-600 hover:text-dark transition-colors text-sm font-medium relative;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute left-0 bottom-0 w-0 h-px bg-dark transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+  
+  .nav-link-active {
+    @apply text-dark;
+  }
+
+  .nav-link-active::after {
+    @apply w-full;
+  }
+
+  /* Two column layout - title left, content right */
+  .two-col-section {
+    @apply grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16;
+  }
+
+  .two-col-title {
+    @apply lg:col-span-4;
+  }
+
+  .two-col-content {
+    @apply lg:col-span-8;
+  }
+
+  /* Section title - modern sans-serif */
+  .section-title {
+    @apply text-3xl md:text-4xl font-semibold text-dark mb-4 tracking-tight;
+  }
+
+  /* Bullet list */
+  .bullet-list {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4;
+  }
+
+  .bullet-item {
+    @apply text-dark-600 flex items-start;
+  }
+
+  .bullet-item::before {
+    content: '·';
+    @apply mr-2 text-dark font-bold text-xl leading-none;
+  }
+
+  /* Simple card for blog/articles */
+  .simple-card {
+    @apply bg-white border border-cream-300 overflow-hidden transition-all duration-300;
+  }
+
+  .simple-card:hover {
+    @apply shadow-md border-cream-400;
+    transform: translateY(-4px);
+  }
+
+  .simple-card-image {
+    @apply aspect-[4/3] bg-cream-200 overflow-hidden;
+  }
+
+  .simple-card-image img {
+    @apply w-full h-full object-cover;
+  }
+
+  .simple-card-content {
+    @apply p-4;
+  }
+
+  .simple-card-title {
+    @apply text-dark font-medium text-base leading-snug;
+  }
+
+  /* Button - simple outline style */
+  .btn-outline {
+    @apply inline-block px-6 py-2 border border-dark text-dark text-sm font-medium 
+           hover:bg-dark hover:text-white transition-colors;
+  }
+
+  /* Footer */
+  .footer {
+    @apply bg-cream-200 py-12;
+  }
+
+  .footer-title {
+    @apply text-dark font-semibold mb-4;
+  }
+
+  .footer-link {
+    @apply text-dark-600 hover:text-dark transition-colors text-sm flex items-center gap-2;
+  }
+
+  /* WhatsApp button */
+  .whatsapp-btn {
+    @apply fixed bottom-6 right-6 w-14 h-14 bg-whatsapp hover:bg-green-600 
+           text-white rounded-full shadow-lg flex items-center justify-center 
+           transition-all duration-300 hover:scale-110 z-40;
+    animation: pulseSoft 2s ease-in-out infinite;
+  }
+
+  .whatsapp-btn:hover {
+    animation: none;
+  }
+
+  /* Profile image style */
+  .profile-image {
+    @apply aspect-[3/4] bg-cream-200 overflow-hidden;
+  }
+
+  /* Page hero - minimal */
+  .page-hero {
+    @apply pt-24 pb-8 bg-cream-100;
+  }
+
+  /* Contact info bar */
+  .contact-bar {
+    @apply flex flex-wrap items-center justify-center gap-6 md:gap-12 py-6 text-sm text-dark-600;
+  }
+
+  .contact-item {
+    @apply flex items-center gap-2;
+  }
+}
+
+@layer utilities {
+  /* Smooth transitions */
+  .transition-default {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  /* Fade in animation */
+  .fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  /* Stagger delay classes */
+  .delay-100 { animation-delay: 0.1s; }
+  .delay-200 { animation-delay: 0.2s; }
+  .delay-300 { animation-delay: 0.3s; }
+  .delay-400 { animation-delay: 0.4s; }
+
+  /* WhatsApp pulse */
+  .pulse-soft {
+    animation: pulseSoft 2s ease-in-out infinite;
+  }
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseSoft {
+  0%, 100% {
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 25px rgba(37, 211, 102, 0.6);
+  }
+}

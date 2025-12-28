@@ -1,0 +1,95 @@
+Psk. Özlem Serpen Web Sitesi - Yapı ve İçerik Analizi
+Genel Tanımlama
+Bu site, bir bireysel psikoloji ve psikoterapi uzmanlık sitesi olarak tasarlanmıştır. Klinik bir psikologun/psikoterapistin kendisini, hizmetlerini ve uzmanlık alanlarını tanıtmak amacıyla kurulu, profesyonel bir iş kartı ve bilgi merkezi işlevi görmektedir.
+Site Yapısı ve Bölümler
+1. Ana Sayfa (Home)
+Ana sayfa, profesyonelin kısa tanıtımını içerir ve ziyaretçilere hızlı bir genel bakış sunar:
+
+Profesyonelin adı ve başlık
+Kısa bir özet paragraf (2-3 cümle) olarak profesyonin kim olduğu
+Aldığı eğitimler ve konferans/seminer katılımlarının liste şeklinde sunumu (20+ eğitim/seminer)
+Çalışma alanları (bireysel, ergen, yetişkin, çift ve aile terapisi)
+Kullanılan terapötik yöntemler (5 ana approach)
+İletişim bilgileri (adres, telefon, sosyal medya)
+
+2. Hakkında Bölümü
+Detaylı bir özgeçmiş ve credentials sayfası:
+
+Uzun format özet (eğitim geçmişi, kariyer yolculuğu)
+Mezuniyet detayları ve öğrenim kurumları
+Profesyonel deneyimleri (çalıştığı merkezler, hastaneler)
+Yayınlanan yazıları ve mesleki kaynakları
+Aldığı Eğitimler bölümü (detaylı liste, 25+ eğitim/seminer/konferans)
+Deneyimler (4-5 profesyonel görev)
+Çalışma Alanları (4 ana kategori)
+Uzmanlık Alanları (15+ mental health konusu: kişilik bozuklukları, depresyon, kaygı, travma vb.)
+Terapiler (kullanılan 5 farklı terapötik approach)
+
+3. Atölyeler Bölümü (Eğitimler)
+Sunulan eğitim ve atölye programlarını listelemektedir:
+
+En az 2 ana atölye başlığı:
+
+Ebeveynler ve Eğitimciler ile Bağlanma Temelli Oyun Atölyesi
+Sanat Terapisi Atölyesi
+
+
+Her atölye için başlık (link) bulunmakta, ancak detaylı açıklamalar yer almamaktadır
+
+4. Blog Bölümü
+Yazılı içerik sunulan bölüm:
+
+Blog yazılarının kart şeklinde listelendiği grid layout
+Başlıklar aracılığıyla detaylı yazılara erişim
+Örnek yazılar: "Yetişkin Bireysel Psikoterapi", "Masterson Yaklaşımlı Psikanalitik Psikoterapi", "Ergen Terapisi", "Aile ve Çift Terapisi"
+Her yazı detaylı paragraflar halinde açıklamalar içermekte
+
+5. Basın Bölümü (Press/Media)
+Medya görünümleri ve yayınlanan içerik:
+
+Yazılı basın kapsama alanları (dergi makaleleri, gazete haberleri)
+Radyo programa katılımları
+Her yazı/görünüm başlığı, görseli ve harici linki ile sunulmakta
+Örnek: "Yalnızlık bulaşıcı mı? - Sober Dergisi", "Online terapide nelere dikkat edilmeli? - Duvar", "Online terapide tam verim alınıyor mu? - NTV Radyo"
+
+6. İletişim Bölümü (Contact)
+Temel iletişim bilgilerinin sunumu:
+
+Fiziksel adres (kliniğin konumu - İstanbul, Esenyurt)
+Telefon numarası (WhatsApp erişimi ile entegre)
+Sosyal medya (Instagram profili)
+Harita görseli ile adres konumunun gösterilmesi
+
+Tasarım ve Teknik Özellikler
+Layout ve Navigasyon
+
+Responsive Design: Mobil cihazlar ve masaüstü için optimize edilmiş
+Hamburger Menü: Mobil versiyonda menu toggle butonuna sahip
+Sticky/Fixed Navigation: Başlıkta sabit menü bulunmakta
+İçeriğe Atla: Erişilebilirlik için başlık kısayolu
+
+İçerik Organizasyonu
+
+Hiyerarşik yapı (ana kategori → alt sayfalar)
+Tekrarlayan footer bölümü (her sayfada iletişim bilgileri)
+WhatsApp ve sosyal medya entegrasyonu
+Görsel unsurlar (profesyonelin fotoğrafı, basın görselleri)
+
+Sitenin Amacı ve İşlevi
+Bu site temelde üç amaca hizmet etmektedir:
+
+Profesyonel Tanıtım: Psikologun credentials, eğitimleri, tecrübesi ve uzmanlık alanlarının detaylı sunumu
+Hizmet Pazarlaması: Sunulan terapötik hizmetler (bireysel terapi, çift terapisi, aile terapisi, atölyeler) hakkında bilgi
+İçerik Pazarlaması: Blog yazıları ve basın kapsama alanları aracılığıyla SEO ve uzmanlik kredibilitesi oluşturma
+
+Benzer Site Yapısında Dikkat Edilecek Noktalar
+Eğer bu yapıya benzer bir site kurgulanacaksa, şu temel elementler yer almalıdır:
+
+Kişisel Branding: Profesyonelin fotoğrafı, biyografisi ve credentials
+Hizmet Kategorileştirilmesi: Sunulan hizmetlerin açık kategoriler altında düzenlenmesi
+Eğitim/Sertifikaları: Uzmanlaştığı konuları kanıtlayan belgelerin liste halinde sunumu
+İçerik Stratejisi: Blog yazıları, basın kapsama alanları gibi SEO-dostu yazılı içerik
+Kolay Erişim: İletişim bilgilerinin her sayfada görünür olması
+Sosyal Proof: Medya görünümleri, yayınlanan yazılar, katılınan konferanslar
+
+Bu yapı, sağlık/danışmanlık profesyonellerinin (psikolog, danışman, terapeut, doktor vb.) kendilerini internette profesyonel şekilde tanıtmak için ideal bir modeldir.

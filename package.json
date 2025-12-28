@@ -1,0 +1,20 @@
+{
+  "name": "psikolog-merve-site",
+  "version": "1.0.0",
+  "description": "Professional website for Psk. Merve - Psychologist & Psychotherapist",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/css/input.css -o ./dist/css/style.css --watch",
+    "build": "npx tailwindcss -i ./src/css/input.css -o ./dist/css/style.css --minify"
+  },
+  "keywords": [
+    "psychologist",
+    "therapy",
+    "mental-health",
+    "turkish"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}
