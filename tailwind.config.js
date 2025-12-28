@@ -9,9 +9,10 @@ module.exports = {
       colors: {
         // Brand colors based on reference design
         brand: {
-          header: '#efe5da', // Warm beige for header
+          header: '#2E1A32', // Deep purple from business card
           text: '#1a1a1a',
-          accent: '#d4c5b5', // Darker beige for borders/accents
+          accent: '#B89B5E', // Gold from business card
+          gold: '#B89B5E',   // Explicit gold color
         },
         // Cream/beige background colors (matching reference)
         cream: {
