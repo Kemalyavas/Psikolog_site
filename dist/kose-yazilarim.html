@@ -29,21 +29,28 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="relative z-50 bg-brand-header shadow-sm border-b border-brand-accent">
+    <header
+      class="relative z-50 bg-brand-header shadow-sm border-b border-brand-accent"
+    >
       <nav class="container-custom">
         <div class="flex items-center justify-between h-24">
           <!-- Logo -->
-          <a href="index.html" class="text-2xl md:text-3xl text-brand-gold" style="font-family: 'Great Vibes', cursive;">Psk. Merve Güngörür</a>
+          <a
+            href="index.html"
+            class="text-2xl md:text-3xl text-brand-gold"
+            style="font-family: 'Great Vibes', cursive"
+            >Psk. Merve Güngörür</a
+          >
 
           <!-- Desktop Navigation -->
           <div class="hidden md:flex items-center space-x-8">
             <a href="hakkimda.html" class="nav-link">Hakkımda</a>
-            <a href="kose-yazilarim.html" class="nav-link nav-link-active text-brand-gold"
+            <a
+              href="kose-yazilarim.html"
+              class="nav-link nav-link-active"
               >Köşe Yazılarım</a
             >
-            <a href="calisma-alanlarim.html" class="nav-link"
-              >Çalışma Alanlarım</a
-            >
+            <a href="calisma-alanlarim.html" class="nav-link">Çalışma Alanlarım</a>
             <a href="randevu.html" class="nav-link">Randevu</a>
           </div>
 
@@ -75,9 +82,7 @@
             <a href="kose-yazilarim.html" class="nav-link nav-link-active"
               >Köşe Yazılarım</a
             >
-            <a href="calisma-alanlarim.html" class="nav-link"
-              >Çalışma Alanlarım</a
-            >
+            <a href="calisma-alanlarim.html" class="nav-link">Çalışma Alanlarım</a>
             <a href="randevu.html" class="nav-link">Randevu</a>
           </div>
         </div>
@@ -85,79 +90,85 @@
     </header>
 
     <!-- Blog Content -->
-    <section class="pt-12 pb-16 bg-cream-100">
+    <section class="pt-16 pb-20 bg-cream-100 min-h-screen">
       <div class="container-custom">
+        <!-- Page Title -->
+        <div class="text-center mb-12">
+          <h1 class="text-4xl md:text-5xl font-semibold text-dark mb-4">
+            Köşe Yazılarım
+          </h1>
+          <p class="text-dark-500 max-w-xl mx-auto">
+            Psikoloji, ilişkiler ve kişisel gelişim hakkında yazılar
+          </p>
+        </div>
+
         <!-- Blog Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <!-- Article Card 1 -->
           <a href="yazi-detay.html" class="simple-card group">
             <div class="simple-card-image">
-              <div
-                class="w-full h-full bg-cream-300 flex items-center justify-center"
-              >
-                <span class="text-dark-400 text-sm">Makale Görseli</span>
+              <div class="img-placeholder w-full h-full">
+                <span>Makale Görseli</span>
               </div>
             </div>
             <div class="simple-card-content">
               <h3
-                class="simple-card-title group-hover:text-coral transition-colors"
+                class="simple-card-title group-hover:text-dark-700 transition-colors"
               >
                 Yetişkin Bireysel Psikoterapi
               </h3>
+              <p class="text-dark-400 text-sm mt-2">Psikolojik danışmanlık sürecinde neler beklenmeli?</p>
             </div>
           </a>
 
           <!-- Article Card 2 -->
           <a href="yazi-detay.html" class="simple-card group">
             <div class="simple-card-image">
-              <div
-                class="w-full h-full bg-cream-300 flex items-center justify-center"
-              >
-                <span class="text-dark-400 text-sm">Makale Görseli</span>
+              <div class="img-placeholder w-full h-full">
+                <span>Makale Görseli</span>
               </div>
             </div>
             <div class="simple-card-content">
               <h3
-                class="simple-card-title group-hover:text-coral transition-colors"
+                class="simple-card-title group-hover:text-dark-700 transition-colors"
               >
-                Psikanalitik Psikoterapi Yaklaşımı
+                Bilişsel Davranışçı Terapi
               </h3>
+              <p class="text-dark-400 text-sm mt-2">BDT yaklaşımı ve temel prensipleri</p>
             </div>
           </a>
 
           <!-- Article Card 3 -->
           <a href="yazi-detay.html" class="simple-card group">
             <div class="simple-card-image">
-              <div
-                class="w-full h-full bg-cream-300 flex items-center justify-center"
-              >
-                <span class="text-dark-400 text-sm">Makale Görseli</span>
+              <div class="img-placeholder w-full h-full">
+                <span>Makale Görseli</span>
               </div>
             </div>
             <div class="simple-card-content">
               <h3
-                class="simple-card-title group-hover:text-coral transition-colors"
+                class="simple-card-title group-hover:text-dark-700 transition-colors"
               >
-                Ergen Terapisi
+                Kaygı ile Başa Çıkma
               </h3>
+              <p class="text-dark-400 text-sm mt-2">Günlük hayatta kaygıyı yönetmenin yolları</p>
             </div>
           </a>
 
           <!-- Article Card 4 -->
           <a href="yazi-detay.html" class="simple-card group">
             <div class="simple-card-image">
-              <div
-                class="w-full h-full bg-cream-300 flex items-center justify-center"
-              >
-                <span class="text-dark-400 text-sm">Makale Görseli</span>
+              <div class="img-placeholder w-full h-full">
+                <span>Makale Görseli</span>
               </div>
             </div>
             <div class="simple-card-content">
               <h3
-                class="simple-card-title group-hover:text-coral transition-colors"
+                class="simple-card-title group-hover:text-dark-700 transition-colors"
               >
                 Aile ve Çift Terapisi
               </h3>
+              <p class="text-dark-400 text-sm mt-2">İlişkilerde iletişim ve sınırlar</p>
             </div>
           </a>
         </div>
@@ -165,19 +176,39 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="bg-cream-150 py-12 border-t border-cream-300">
       <div class="container-custom">
-        <div class="grid md:grid-cols-2 gap-8 items-start">
+        <div class="grid md:grid-cols-3 gap-8 items-start">
           <!-- Logo -->
           <div>
-            <a href="index.html" class="text-2xl md:text-3xl text-brand-gold" style="font-family: 'Great Vibes', cursive;">Psk. Merve Güngörür</a>
+            <a
+              href="index.html"
+              class="text-2xl md:text-3xl text-brand-gold"
+              style="font-family: 'Great Vibes', cursive"
+              >Psk. Merve Güngörür</a
+            >
+            <p class="text-dark-500 text-sm mt-3">Psikolog & Aile Danışmanı</p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h3 class="footer-title">Sayfalar</h3>
+            <div class="space-y-2">
+              <a href="hakkimda.html" class="footer-link">Hakkımda</a>
+              <a href="calisma-alanlarim.html" class="footer-link">Çalışma Alanlarım</a>
+              <a href="kose-yazilarim.html" class="footer-link">Köşe Yazılarım</a>
+              <a href="randevu.html" class="footer-link">Randevu</a>
+            </div>
           </div>
 
           <!-- Contact Info -->
           <div>
-            <h3 class="footer-title">Randevu</h3>
+            <h3 class="footer-title">İletişim</h3>
             <div class="space-y-3">
-              <a href="mailto:Gungorurdanismanlık@gmail.com" class="footer-link">
+              <a
+                href="mailto:Gungorurdanismanlık@gmail.com"
+                class="footer-link"
+              >
                 <svg
                   class="w-4 h-4"
                   fill="none"
@@ -230,7 +261,7 @@
         </div>
 
         <!-- Copyright -->
-        <div class="mt-6 pt-6 border-t border-brand-accent text-center">
+        <div class="mt-10 pt-6 border-t border-cream-300 text-center">
           <p class="text-dark-500 text-sm">
             © 2025 Psk. Merve Güngörür. Tüm hakları saklıdır.
           </p>

@@ -29,17 +29,26 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="relative z-50 bg-brand-header shadow-sm border-b border-brand-accent">
+    <header
+      class="relative z-50 bg-brand-header shadow-sm border-b border-brand-accent"
+    >
       <nav class="container-custom">
         <div class="flex items-center justify-between h-24">
           <!-- Logo -->
-          <a href="index.html" class="text-2xl md:text-3xl text-brand-gold" style="font-family: 'Great Vibes', cursive;">Psk. Merve Güngörür</a>
+          <a
+            href="index.html"
+            class="text-2xl md:text-3xl text-brand-gold"
+            style="font-family: 'Great Vibes', cursive"
+            >Psk. Merve Güngörür</a
+          >
 
           <!-- Desktop Navigation -->
           <div class="hidden md:flex items-center space-x-8">
             <a href="hakkimda.html" class="nav-link">Hakkımda</a>
             <a href="kose-yazilarim.html" class="nav-link">Köşe Yazılarım</a>
-            <a href="calisma-alanlarim.html" class="nav-link nav-link-active text-brand-gold"
+            <a
+              href="calisma-alanlarim.html"
+              class="nav-link nav-link-active"
               >Çalışma Alanlarım</a
             >
             <a href="randevu.html" class="nav-link">Randevu</a>
@@ -80,145 +89,58 @@
       </nav>
     </header>
 
-    <!-- Çalışma Alanları Section -->
-    <section class="pt-12 pb-16 bg-cream-100">
+    <!-- Page Header -->
+    <section class="pt-16 pb-12 bg-cream-100">
       <div class="container-custom">
-        <div class="max-w-6xl mx-auto">
-          <h1 class="text-4xl md:text-5xl font-semibold text-dark tracking-tight">
+        <div class="max-w-4xl">
+          <h1 class="text-4xl md:text-5xl font-semibold text-dark mb-4">
             Çalışma Alanlarım
           </h1>
+          <p class="text-dark-500 text-lg">
+            Bilimsel temelli, kanıta dayalı terapi yaklaşımları ile çalışıyorum.
+          </p>
+        </div>
+      </div>
+    </section>
 
-          <div class="mt-10 space-y-14">
-            <!-- BDT Card -->
-            <div class="py-2">
-              <div class="two-col-section">
-                <div class="two-col-title">
-                  <h2 class="text-2xl md:text-3xl font-semibold text-dark tracking-tight">
-                    Bilişsel Davranışçı Terapi (BDT)
-                  </h2>
+    <!-- BDT Section -->
+    <section class="py-20 bg-cream-50">
+      <div class="container-custom">
+        <div class="max-w-6xl mx-auto">
+          <div class="grid lg:grid-cols-5 gap-10 items-start">
+            <!-- Title Column -->
+            <div class="lg:col-span-2">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-12 h-12 rounded-xl bg-warm-100 flex items-center justify-center">
+                  <svg class="w-6 h-6 text-dark-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  </svg>
                 </div>
-                <div class="two-col-content">
-                  <ul class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-12 gap-y-4">
-                    <li class="bullet-item">Yeme Bozuklukları</li>
-                    <li class="bullet-item">Depresyon</li>
-                    <li class="bullet-item">Panik Bozukluk</li>
-                    <li class="bullet-item">Yaygın Kaygı Bozukluğu</li>
-                    <li class="bullet-item">Sosyal Anksiyete Bozukluğu</li>
-                    <li class="bullet-item">Obsesif Kompülsif Bozukluk (OKB)</li>
-                    <li class="bullet-item">Travma Sonrası Stres Bozukluğu</li>
-                    <li class="bullet-item">Fobiler</li>
-                    <li class="bullet-item">Dikkat Eksikliği ve Hiperaktivite</li>
-                    <li class="bullet-item">Somatoform Bozukluk</li>
-                    <li class="bullet-item">Dürtü Kontrol Bozukluğu</li>
-                  </ul>
-                </div>
+                <h2 class="text-2xl md:text-3xl font-semibold text-dark">
+                  Bilişsel Davranışçı Terapi
+                </h2>
               </div>
+              <p class="text-dark-500 leading-relaxed">
+                Düşünce, duygu ve davranış arasındaki bağlantıyı anlamaya ve işlevsel olmayan kalıpları değiştirmeye odaklanan, yapılandırılmış ve hedef odaklı bir terapi yaklaşımıdır.
+              </p>
             </div>
 
-            <!-- ACT Card -->
-            <div class="pt-12 border-t border-cream-200">
-              <div class="two-col-section">
-                <div class="two-col-title">
-                  <h2 class="text-2xl md:text-3xl font-semibold text-dark tracking-tight">
-                    Kabul ve Kararlılık Terapisi (ACT)
-                  </h2>
-                </div>
-                <div class="two-col-content">
-                  <div class="space-y-6">
-                    <div class="flex items-start">
-                      <span class="mr-2 text-dark font-bold text-xl leading-none">·</span>
-                      <div>
-                        <span class="font-medium text-dark-600">Anksiyete ve Kaygı Temelli Sorunlar</span>
-                        <p class="text-dark-500 text-sm mt-1">Sürekli "ya yetişemezsem, ya yanlış yaparsam" düşünceleriyle tetikteysen ve bu kaygı seni durduruyorsa.</p>
-                      </div>
-                    </div>
-                    <div class="flex items-start">
-                      <span class="mr-2 text-dark font-bold text-xl leading-none">·</span>
-                      <div>
-                        <span class="font-medium text-dark-600">Depresif Belirtiler</span>
-                        <p class="text-dark-500 text-sm mt-1">Zor bir duygu geldiğinde donup kalıyor, hiçbir şeye başlayamıyorsan.</p>
-                      </div>
-                    </div>
-                    <div class="flex items-start">
-                      <span class="mr-2 text-dark font-bold text-xl leading-none">·</span>
-                      <div>
-                        <span class="font-medium text-dark-600">Duygusal Kaçınma ve Bastırma</span>
-                        <p class="text-dark-500 text-sm mt-1">Üzülmemek için duygularını bastırıyor, sonra bir anda taşacak gibi oluyorsan.</p>
-                      </div>
-                    </div>
-                    <div class="flex items-start">
-                      <span class="mr-2 text-dark font-bold text-xl leading-none">·</span>
-                      <div>
-                        <span class="font-medium text-dark-600">Yoğun Stres ve Tükenmişlik</span>
-                        <p class="text-dark-500 text-sm mt-1">Sürekli güçlü kalmaya çalışıyor ama içten içe tükenmiş hissediyorsan.</p>
-                      </div>
-                    </div>
-                    <div class="flex items-start">
-                      <span class="mr-2 text-dark font-bold text-xl leading-none">·</span>
-                      <div>
-                        <span class="font-medium text-dark-600">Değer Karmaşası ve Yaşam Yönü</span>
-                        <p class="text-dark-500 text-sm mt-1">Hayatında bir şeyler eksik ama ne olduğunu tam adlandıramıyorsan.</p>
-                      </div>
-                    </div>
-                    <div class="flex items-start">
-                      <span class="mr-2 text-dark font-bold text-xl leading-none">·</span>
-                      <div>
-                        <span class="font-medium text-dark-600">İlişkisel Problemler</span>
-                        <p class="text-dark-500 text-sm mt-1">İlişkilerde kendini yetersiz hissediyor, yakınlaştıkça boğuluyorsan.</p>
-                      </div>
-                    </div>
-                    <div class="flex items-start">
-                      <span class="mr-2 text-dark font-bold text-xl leading-none">·</span>
-                      <div>
-                        <span class="font-medium text-dark-600">Kronik Ağrı ve Psikosomatik Yakınmalar</span>
-                        <p class="text-dark-500 text-sm mt-1">Stres arttıkça bedenin alarm veriyor ve bu durum yaşamını kısıtlıyorsa.</p>
-                      </div>
-                    </div>
-                    <div class="flex items-start">
-                      <span class="mr-2 text-dark font-bold text-xl leading-none">·</span>
-                      <div>
-                        <span class="font-medium text-dark-600">Travma Sonrası Yaşantılar</span>
-                        <p class="text-dark-500 text-sm mt-1">Durup dururken geçmiş zihnine geliyor ve hâlâ ordaymış gibi hissediyorsan.</p>
-                      </div>
-                    </div>
-                    <div class="flex items-start">
-                      <span class="mr-2 text-dark font-bold text-xl leading-none">·</span>
-                      <div>
-                        <span class="font-medium text-dark-600">Öz-Şefkat ve Kendilik Algısı</span>
-                        <p class="text-dark-500 text-sm mt-1">Sürekli kendini eleştiriyor, kendine karşı çok sert davranıyorsan.</p>
-                      </div>
-                    </div>
-                    <div class="flex items-start">
-                      <span class="mr-2 text-dark font-bold text-xl leading-none">·</span>
-                      <div>
-                        <span class="font-medium text-dark-600">Dürtü Kontrolü ve Zorlayıcı Davranışlar</span>
-                        <p class="text-dark-500 text-sm mt-1">Anlık rahatlatan ama sonrasında pişmanlık yaratan davranışlar tekrar ediyorsa.</p>
-                      </div>
-                    </div>
-                    <div class="flex items-start">
-                      <span class="mr-2 text-dark font-bold text-xl leading-none">·</span>
-                      <div>
-                        <span class="font-medium text-dark-600">Yaşam Doyumu ve Anlam Arayışı</span>
-                        <p class="text-dark-500 text-sm mt-1">Her şey yolunda görünmesine rağmen içten içe boşluk hissi varsa.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Terapiler Card -->
-            <div class="pt-12 border-t border-cream-200">
-              <div class="two-col-section">
-                <div class="two-col-title">
-                  <h2 class="text-2xl md:text-3xl font-semibold text-dark tracking-tight">Terapiler</h2>
-                </div>
-                <div class="two-col-content">
-                  <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-4">
-                    <li class="bullet-item">Bilişsel Davranışçı Terapi (BDT)</li>
-                    <li class="bullet-item">Kabul ve Kararlılık Terapisi (ACT)</li>
-                    <li class="bullet-item">Aile Danışmanlığı</li>
-                  </ul>
+            <!-- Tags Column -->
+            <div class="lg:col-span-3">
+              <div class="bg-white rounded-2xl p-6 md:p-8 shadow-card">
+                <h3 class="text-sm font-medium text-dark-400 uppercase tracking-wider mb-5">Ele Alınan Konular</h3>
+                <div class="flex flex-wrap gap-3">
+                  <span class="px-4 py-2 bg-cream-100 text-dark-600 rounded-full text-sm font-medium">Depresyon</span>
+                  <span class="px-4 py-2 bg-cream-100 text-dark-600 rounded-full text-sm font-medium">Yaygın Kaygı Bozukluğu</span>
+                  <span class="px-4 py-2 bg-cream-100 text-dark-600 rounded-full text-sm font-medium">Panik Bozukluk</span>
+                  <span class="px-4 py-2 bg-cream-100 text-dark-600 rounded-full text-sm font-medium">Sosyal Anksiyete</span>
+                  <span class="px-4 py-2 bg-cream-100 text-dark-600 rounded-full text-sm font-medium">OKB</span>
+                  <span class="px-4 py-2 bg-cream-100 text-dark-600 rounded-full text-sm font-medium">Fobiler</span>
+                  <span class="px-4 py-2 bg-cream-100 text-dark-600 rounded-full text-sm font-medium">Travma Sonrası Stres</span>
+                  <span class="px-4 py-2 bg-cream-100 text-dark-600 rounded-full text-sm font-medium">Yeme Bozuklukları</span>
+                  <span class="px-4 py-2 bg-cream-100 text-dark-600 rounded-full text-sm font-medium">Dikkat Eksikliği</span>
+                  <span class="px-4 py-2 bg-cream-100 text-dark-600 rounded-full text-sm font-medium">Dürtü Kontrolü</span>
+                  <span class="px-4 py-2 bg-cream-100 text-dark-600 rounded-full text-sm font-medium">Somatoform Bozukluk</span>
                 </div>
               </div>
             </div>
@@ -227,20 +149,150 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- ACT Section -->
+    <section class="py-20 bg-cream-100">
       <div class="container-custom">
-        <div class="grid md:grid-cols-2 gap-8 items-start">
+        <div class="max-w-6xl mx-auto">
+          <!-- Header -->
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-xl bg-sage-100 flex items-center justify-center">
+              <svg class="w-6 h-6 text-dark-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </div>
+            <h2 class="text-2xl md:text-3xl font-semibold text-dark">
+              Kabul ve Kararlılık Terapisi
+            </h2>
+          </div>
+          <p class="text-dark-500 leading-relaxed max-w-3xl mb-10">
+            Psikolojik esneklik kazanmayı hedefleyen, değerler odaklı bir yaşam sürmeyi destekleyen üçüncü dalga davranışçı terapi yaklaşımıdır.
+          </p>
+
+          <!-- Cards Grid -->
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div class="bg-white rounded-xl p-5 shadow-card hover:shadow-card-hover transition-shadow">
+              <h3 class="font-semibold text-dark mb-2">Anksiyete ve Kaygı</h3>
+              <p class="text-dark-500 text-sm leading-relaxed">
+                Sürekli "ya yetişemezsem, ya yanlış yaparsam" düşünceleriyle tetikteysen ve bu kaygı seni durduruyorsa.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-xl p-5 shadow-card hover:shadow-card-hover transition-shadow">
+              <h3 class="font-semibold text-dark mb-2">Depresif Belirtiler</h3>
+              <p class="text-dark-500 text-sm leading-relaxed">
+                Zor bir duygu geldiğinde donup kalıyor, hiçbir şeye başlayamıyorsan.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-xl p-5 shadow-card hover:shadow-card-hover transition-shadow">
+              <h3 class="font-semibold text-dark mb-2">Duygusal Kaçınma</h3>
+              <p class="text-dark-500 text-sm leading-relaxed">
+                Üzülmemek için duygularını bastırıyor, sonra bir anda taşacak gibi oluyorsan.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-xl p-5 shadow-card hover:shadow-card-hover transition-shadow">
+              <h3 class="font-semibold text-dark mb-2">Stres ve Tükenmişlik</h3>
+              <p class="text-dark-500 text-sm leading-relaxed">
+                Sürekli güçlü kalmaya çalışıyor ama içten içe tükenmiş hissediyorsan.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-xl p-5 shadow-card hover:shadow-card-hover transition-shadow">
+              <h3 class="font-semibold text-dark mb-2">Değer ve Anlam Arayışı</h3>
+              <p class="text-dark-500 text-sm leading-relaxed">
+                Hayatında bir şeyler eksik ama ne olduğunu tam adlandıramıyorsan.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-xl p-5 shadow-card hover:shadow-card-hover transition-shadow">
+              <h3 class="font-semibold text-dark mb-2">İlişkisel Problemler</h3>
+              <p class="text-dark-500 text-sm leading-relaxed">
+                İlişkilerde kendini yetersiz hissediyor, yakınlaştıkça boğuluyorsan.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-xl p-5 shadow-card hover:shadow-card-hover transition-shadow">
+              <h3 class="font-semibold text-dark mb-2">Kronik Ağrı</h3>
+              <p class="text-dark-500 text-sm leading-relaxed">
+                Stres arttıkça bedenin alarm veriyor ve bu durum yaşamını kısıtlıyorsa.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-xl p-5 shadow-card hover:shadow-card-hover transition-shadow">
+              <h3 class="font-semibold text-dark mb-2">Travma Sonrası</h3>
+              <p class="text-dark-500 text-sm leading-relaxed">
+                Durup dururken geçmiş zihnine geliyor ve hâlâ ordaymış gibi hissediyorsan.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-xl p-5 shadow-card hover:shadow-card-hover transition-shadow">
+              <h3 class="font-semibold text-dark mb-2">Öz-Şefkat</h3>
+              <p class="text-dark-500 text-sm leading-relaxed">
+                Sürekli kendini eleştiriyor, kendine karşı çok sert davranıyorsan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Aile Danışmanlığı Section -->
+    <section class="py-20 bg-warm-100">
+      <div class="container-custom">
+        <div class="max-w-4xl mx-auto text-center">
+          <div class="w-14 h-14 rounded-xl bg-white/60 flex items-center justify-center mx-auto mb-5">
+            <svg class="w-7 h-7 text-dark-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-semibold text-dark mb-4">
+            Aile Danışmanlığı
+          </h2>
+          <p class="text-dark-600 leading-relaxed max-w-2xl mx-auto mb-8">
+            Aile içi iletişim sorunları, ebeveyn-çocuk ilişkileri, çift uyumu ve aile dinamikleri üzerinde çalışarak daha sağlıklı ilişki kalıpları oluşturmayı hedefler.
+          </p>
+          <a href="randevu.html" class="inline-block px-6 py-3 bg-dark text-white font-medium hover:bg-dark-700 transition-colors">
+            Randevu Al
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-cream-150 py-12 border-t border-cream-300">
+      <div class="container-custom">
+        <div class="grid md:grid-cols-3 gap-8 items-start">
           <!-- Logo -->
           <div>
-            <a href="index.html" class="text-2xl md:text-3xl text-brand-gold" style="font-family: 'Great Vibes', cursive;">Psk. Merve Güngörür</a>
+            <a
+              href="index.html"
+              class="text-2xl md:text-3xl text-brand-gold"
+              style="font-family: 'Great Vibes', cursive"
+              >Psk. Merve Güngörür</a
+            >
+            <p class="text-dark-500 text-sm mt-3">Psikolog & Aile Danışmanı</p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h3 class="footer-title">Sayfalar</h3>
+            <div class="space-y-2">
+              <a href="hakkimda.html" class="footer-link">Hakkımda</a>
+              <a href="calisma-alanlarim.html" class="footer-link">Çalışma Alanlarım</a>
+              <a href="kose-yazilarim.html" class="footer-link">Köşe Yazılarım</a>
+              <a href="randevu.html" class="footer-link">Randevu</a>
+            </div>
           </div>
 
           <!-- Contact Info -->
           <div>
-            <h3 class="footer-title">Randevu</h3>
+            <h3 class="footer-title">İletişim</h3>
             <div class="space-y-3">
-              <a href="mailto:Gungorurdanismanlık@gmail.com" class="footer-link">
+              <a
+                href="mailto:Gungorurdanismanlık@gmail.com"
+                class="footer-link"
+              >
                 <svg
                   class="w-4 h-4"
                   fill="none"
@@ -293,7 +345,7 @@
         </div>
 
         <!-- Copyright -->
-        <div class="mt-6 pt-6 border-t border-brand-accent text-center">
+        <div class="mt-10 pt-6 border-t border-cream-300 text-center">
           <p class="text-dark-500 text-sm">
             © 2025 Psk. Merve Güngörür. Tüm hakları saklıdır.
           </p>

@@ -36,6 +36,32 @@
     @apply py-16 md:py-24;
   }
 
+  /* Alternating section backgrounds */
+  .section-light {
+    @apply bg-cream-50;
+  }
+
+  .section-default {
+    @apply bg-cream-100;
+  }
+
+  .section-warm {
+    @apply bg-warm-100;
+  }
+
+  .section-alt {
+    @apply bg-cream-150;
+  }
+
+  /* Image placeholder */
+  .img-placeholder {
+    @apply bg-gradient-to-br from-cream-200 to-cream-300 flex items-center justify-center text-dark-400 text-sm rounded-lg;
+  }
+
+  .img-placeholder-warm {
+    @apply bg-gradient-to-br from-warm-100 to-warm-200 flex items-center justify-center text-dark-400 text-sm rounded-lg;
+  }
+
   /* Logo - Modern professional style */
   .logo-script {
     @apply text-xl md:text-2xl tracking-wide;
@@ -101,28 +127,71 @@
 
   /* Simple card for blog/articles */
   .simple-card {
-    @apply bg-white border border-cream-300 overflow-hidden transition-all duration-300;
+    @apply bg-white border border-cream-300 overflow-hidden transition-all duration-300 rounded-xl shadow-card;
   }
 
   .simple-card:hover {
-    @apply shadow-md border-cream-400;
-    transform: translateY(-4px);
+    @apply shadow-card-hover border-cream-400;
+    transform: translateY(-6px);
   }
 
   .simple-card-image {
-    @apply aspect-[4/3] bg-cream-200 overflow-hidden;
+    @apply aspect-[4/3] bg-gradient-to-br from-cream-200 to-cream-300 overflow-hidden;
   }
 
   .simple-card-image img {
-    @apply w-full h-full object-cover;
+    @apply w-full h-full object-cover transition-transform duration-500;
+  }
+
+  .simple-card:hover .simple-card-image img {
+    transform: scale(1.05);
   }
 
   .simple-card-content {
-    @apply p-4;
+    @apply p-5;
   }
 
   .simple-card-title {
     @apply text-dark font-medium text-base leading-snug;
+  }
+
+  /* Feature card - for services/therapies */
+  .feature-card {
+    @apply bg-white border border-cream-300 rounded-xl p-6 transition-all duration-300 shadow-card;
+  }
+
+  .feature-card:hover {
+    @apply shadow-card-hover border-cream-400;
+    transform: translateY(-4px);
+  }
+
+  .feature-card-icon {
+    @apply w-12 h-12 rounded-full bg-cream-200 flex items-center justify-center mb-4 text-dark-600;
+  }
+
+  .feature-card-title {
+    @apply text-lg font-semibold text-dark mb-2;
+  }
+
+  .feature-card-desc {
+    @apply text-dark-500 text-sm leading-relaxed;
+  }
+
+  /* Info card - for contact/randevu */
+  .info-card {
+    @apply bg-white border border-cream-300 rounded-xl p-6 text-center transition-all duration-300 shadow-soft;
+  }
+
+  .info-card:hover {
+    @apply shadow-soft-md border-cream-400;
+  }
+
+  .info-card-icon {
+    @apply w-14 h-14 mx-auto mb-4 rounded-full bg-cream-100 flex items-center justify-center text-dark-600 transition-colors duration-300;
+  }
+
+  .info-card:hover .info-card-icon {
+    @apply bg-dark text-white;
   }
 
   /* Button - simple outline style */
@@ -150,6 +219,27 @@
            text-white rounded-full shadow-lg flex items-center justify-center 
            transition-all duration-300 hover:scale-110 z-40;
     animation: pulseSoft 2s ease-in-out infinite;
+  }
+
+  /* Scroll reveal - minimal & professional */
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 700ms cubic-bezier(0.22, 1, 0.36, 1), transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
   }
 
   .whatsapp-btn:hover {

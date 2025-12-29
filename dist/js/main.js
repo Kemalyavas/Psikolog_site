@@ -21,15 +21,55 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Fade in elements on page load
-    const fadeElements = document.querySelectorAll('.fade-in-on-load');
-    fadeElements.forEach((el, index) => {
-        el.style.opacity = '0';
-        setTimeout(() => {
-            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-            el.style.opacity = '1';
-        }, index * 100);
+    // Scroll reveal animations - modern & professional
+    const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Target all sections (except first visible) and footer
+    const allSections = document.querySelectorAll('section, article, footer');
+    const revealTargets = [];
+
+    allSections.forEach((section, index) => {
+        // Skip header
+        if (section.closest('header')) return;
+        
+        const rect = section.getBoundingClientRect();
+        const isAboveFold = rect.top < window.innerHeight * 0.85;
+        
+        if (index === 0 && isAboveFold) {
+            // First section already visible - don't animate
+            return;
+        }
+        
+        revealTargets.push(section);
     });
+
+    if (revealTargets.length && !prefersReducedMotion) {
+        // Apply initial hidden state - more dramatic for visibility
+        revealTargets.forEach((el, i) => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(60px) scale(0.97)';
+            el.style.transition = 'opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1)';
+            el.style.transitionDelay = `${(i % 3) * 120}ms`;
+        });
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0) scale(1)';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            {
+                threshold: 0.05,
+                rootMargin: '0px 0px -80px 0px'
+            }
+        );
+
+        revealTargets.forEach((el) => observer.observe(el));
+    }
 });
 
 // WhatsApp Function

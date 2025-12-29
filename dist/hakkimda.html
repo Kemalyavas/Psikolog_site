@@ -29,19 +29,28 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="relative z-50 bg-brand-header shadow-sm border-b border-brand-accent">
+    <header
+      class="relative z-50 bg-brand-header shadow-sm border-b border-brand-accent"
+    >
       <nav class="container-custom">
         <div class="flex items-center justify-between h-24">
           <!-- Logo -->
-          <a href="index.html" class="text-2xl md:text-3xl text-brand-gold" style="font-family: 'Great Vibes', cursive;">Psk. Merve Güngörür</a>
+          <a
+            href="index.html"
+            class="text-2xl md:text-3xl text-brand-gold"
+            style="font-family: 'Great Vibes', cursive"
+            >Psk. Merve Güngörür</a
+          >
 
           <!-- Desktop Navigation -->
           <div class="hidden md:flex items-center space-x-8">
-            <a href="hakkimda.html" class="nav-link nav-link-active text-brand-gold">Hakkımda</a>
-            <a href="kose-yazilarim.html" class="nav-link">Köşe Yazılarım</a>
-            <a href="calisma-alanlarim.html" class="nav-link"
-              >Çalışma Alanlarım</a
+            <a
+              href="hakkimda.html"
+              class="nav-link nav-link-active"
+              >Hakkımda</a
             >
+            <a href="kose-yazilarim.html" class="nav-link">Köşe Yazılarım</a>
+            <a href="calisma-alanlarim.html" class="nav-link">Çalışma Alanlarım</a>
             <a href="randevu.html" class="nav-link">Randevu</a>
           </div>
 
@@ -73,9 +82,7 @@
               >Hakkımda</a
             >
             <a href="kose-yazilarim.html" class="nav-link">Köşe Yazılarım</a>
-            <a href="calisma-alanlarim.html" class="nav-link"
-              >Çalışma Alanlarım</a
-            >
+            <a href="calisma-alanlarim.html" class="nav-link">Çalışma Alanlarım</a>
             <a href="randevu.html" class="nav-link">Randevu</a>
           </div>
         </div>
@@ -83,177 +90,250 @@
     </header>
 
     <!-- Hero Section with Profile -->
-    <section class="pt-12 pb-16 bg-cream-100">
-      <div class="container-custom">
-        <div class="grid lg:grid-cols-2 gap-12 items-start">
+    <section class="pt-16 pb-20 bg-cream-100 relative overflow-hidden">
+      <!-- Decorative Elements -->
+      <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-cream-200/50 to-transparent pointer-events-none"></div>
+
+      <div class="container-custom relative">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           <!-- Profile Image -->
-          <div class="profile-image w-full max-w-md mx-auto lg:mx-0 sticky top-28 shadow-xl rounded-2xl overflow-hidden">
-            <img 
-              src="images/pp.jpeg" 
-              alt="Psk. Merve Güngörür" 
-              class="w-full h-full object-cover object-top"
-            />
+          <div class="relative">
+            <div
+              class="profile-image w-full max-w-md mx-auto lg:mx-0 lg:sticky lg:top-28 shadow-soft-lg rounded-2xl overflow-hidden"
+            >
+              <img
+                src="images/pp.jpeg"
+                alt="Psk. Merve Güngörür"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <!-- Decorative accent -->
+            <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-warm-200 rounded-2xl -z-10 hidden lg:block"></div>
           </div>
 
           <!-- Content -->
           <div>
             <h1
-              class="text-4xl md:text-5xl font-serif font-bold text-dark mb-6"
+              class="text-3xl md:text-4xl lg:text-5xl font-sans font-semibold text-dark mb-4 tracking-tight"
             >
               Merve Güngörür
             </h1>
 
-            <h2 class="text-lg font-medium text-dark-600 mb-6">Psikolog & Aile Danışmanı</h2>
-
-            <div class="space-y-4 text-dark-600 leading-relaxed">
-              <p>
-                Ben Merve Güngörür. Lisans eğitimimi İstanbul Beykent Üniversitesi Psikoloji Bölümü’nde tamamladım. Psikolojiye olan ilgim, bireyin bugün yaşadığı zorlukların yalnızca görünen nedenlerden değil, erken dönem yaşantılar ve öğrenilmiş örüntülerden beslendiğini fark etmemle derinleşti.
-              </p>
-              <p>
-                Mesleki çalışmalarımda ağırlıklı olarak yetişkin bireyler ve ailelerle çalışıyorum. Danışmanlık sürecinde; düşünce, duygu ve davranışları yalnızca “ne oluyor” üzerinden değil, nasıl şekillendiği ve yaşamda nasıl tekrarlandığı üzerinden ele alıyorum.
-              </p>
-              <p>
-                Çalışmalarımda Bilişsel Davranışçı Terapi (BDT) ve Kabul ve Kararlılık Terapisi (ACT) temelli bir yaklaşım benimseyerek; bireylerin farkındalık geliştirmelerine, esneklik kazanmalarına ve değerleri doğrultusunda daha dengeli bir yaşam kurmalarına eşlik ediyorum.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Aldığı Eğitimler Section -->
-    <section class="section-padding bg-cream-100 border-t border-cream-200">
-      <div class="container-custom">
-        <div class="two-col-section">
-          <div class="two-col-title">
-            <h2 class="section-title">
-              Eğitimler ve Sertifikalar
+            <h2 class="text-lg md:text-xl font-medium text-dark-500 mb-8">
+              Psikolog & Aile Danışmanı
             </h2>
-          </div>
-          <div class="two-col-content">
-            <div class="bullet-list">
-              <p class="bullet-item">İstanbul Beykent Üniversitesi - Psikoloji Lisansı</p>
-              <p class="bullet-item">Biruni Üniversitesi - Yüksek Psikoloji Akademisi: Bilişsel Davranışçı Terapi Eğitimi (BDT)</p>
-              <p class="bullet-item">Biruni Üniversitesi - Yüksek Psikoloji Akademisi: Kabul ve Kararlılık Terapisi Eğitimi (ACT)</p>
-              <p class="bullet-item">Marmara Üniversitesi - Aile Danışmanlığı</p>
+
+            <div class="space-y-5 text-dark-600 leading-relaxed">
+              <p>
+                Ben Merve Güngörür. Lisans eğitimimi İstanbul Beykent
+                Üniversitesi Psikoloji Bölümü'nde tamamladım. Psikolojiye olan
+                ilgim, bireyin bugün yaşadığı zorlukların yalnızca görünen
+                nedenlerden değil, erken dönem yaşantılar ve öğrenilmiş
+                örüntülerden beslendiğini fark etmemle derinleşti.
+              </p>
+              <p>
+                Mesleki çalışmalarımda ağırlıklı olarak yetişkin bireyler ve
+                ailelerle çalışıyorum. Danışmanlık sürecinde; düşünce, duygu ve
+                davranışları yalnızca "ne oluyor" üzerinden değil, nasıl
+                şekillendiği ve yaşamda nasıl tekrarlandığı üzerinden ele
+                alıyorum.
+              </p>
+              <p>
+                Çalışmalarımda Bilişsel Davranışçı Terapi (BDT) ve Kabul ve
+                Kararlılık Terapisi (ACT) temelli bir yaklaşım benimseyerek;
+                bireylerin farkındalık geliştirmelerine, esneklik kazanmalarına
+                ve değerleri doğrultusunda daha dengeli bir yaşam kurmalarına
+                eşlik ediyorum.
+              </p>
+            </div>
+
+            <div class="mt-10">
+              <a href="randevu.html" class="inline-block px-8 py-3 bg-dark text-white font-medium hover:bg-dark-700 transition-colors">
+                Randevu Al
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Danışmanlık Sürecinde Ele Alınan Konular Section -->
-    <section class="section-padding bg-cream-100 border-t border-cream-200">
+    <!-- Eğitimler Section - Card Format -->
+    <section class="section-padding bg-cream-50">
       <div class="container-custom">
-        <div class="two-col-section">
-          <div class="two-col-title">
-            <h2 class="section-title">Danışmanlık Sürecinde Sıkça Ele Alınan Konular</h2>
-          </div>
-          <div class="two-col-content">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">
-              <p class="bullet-item">Sürekli zihinde dönen olumsuz düşünceler</p>
-              <p class="bullet-item">Erteleme, odaklanma güçlüğü ve tükenmişlik</p>
-              <p class="bullet-item">Duyguları yönetmede zorlanma</p>
-              <p class="bullet-item">İlişkilerde tekrar eden döngüler</p>
-              <p class="bullet-item">"Yetersizim", "Kontrolü kaybedeceğim", "Değişemem" gibi işlevselliği azaltan içsel anlatılar</p>
+        <h2 class="text-3xl md:text-4xl font-semibold text-dark mb-10 text-center">Eğitimler ve Sertifikalar</h2>
+
+        <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <!-- Lisans -->
+          <div class="feature-card">
+            <div class="feature-card-icon">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14l9-5-9-5-9 5 9 5z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+              </svg>
             </div>
+            <h3 class="feature-card-title">Psikoloji Lisansı</h3>
+            <p class="feature-card-desc">İstanbul Beykent Üniversitesi</p>
+          </div>
+
+          <!-- BDT -->
+          <div class="feature-card">
+            <div class="feature-card-icon">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Bilişsel Davranışçı Terapi (BDT)</h3>
+            <p class="feature-card-desc">Biruni Üniversitesi - Yüksek Psikoloji Akademisi</p>
+          </div>
+
+          <!-- ACT -->
+          <div class="feature-card">
+            <div class="feature-card-icon">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Kabul ve Kararlılık Terapisi (ACT)</h3>
+            <p class="feature-card-desc">Biruni Üniversitesi - Yüksek Psikoloji Akademisi</p>
+          </div>
+
+          <!-- Aile Danışmanlığı -->
+          <div class="feature-card">
+            <div class="feature-card-icon">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Aile Danışmanlığı</h3>
+            <p class="feature-card-desc">Marmara Üniversitesi</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Çalışma Alanları Section -->
-    <section class="section-padding bg-cream-100 border-t border-cream-200">
+    <!-- Danışmanlık Konuları Section -->
+    <section class="section-padding bg-cream-100">
       <div class="container-custom">
-        <div class="two-col-section">
-          <div class="two-col-title">
-            <h2 class="section-title">Çalışma Alanları</h2>
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-semibold text-dark mb-4 text-center">
+            Sıkça Ele Alınan Konular
+          </h2>
+          <p class="text-dark-500 text-center mb-10 max-w-2xl mx-auto">
+            Danışmanlık sürecinde birlikte çalıştığımız temel alanlar
+          </p>
+
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="bg-white p-5 rounded-xl border border-cream-300 shadow-soft">
+              <p class="text-dark-700 font-medium">Sürekli zihinde dönen olumsuz düşünceler</p>
+            </div>
+            <div class="bg-white p-5 rounded-xl border border-cream-300 shadow-soft">
+              <p class="text-dark-700 font-medium">Erteleme ve odaklanma güçlüğü</p>
+            </div>
+            <div class="bg-white p-5 rounded-xl border border-cream-300 shadow-soft">
+              <p class="text-dark-700 font-medium">Tükenmişlik hissi</p>
+            </div>
+            <div class="bg-white p-5 rounded-xl border border-cream-300 shadow-soft">
+              <p class="text-dark-700 font-medium">Duyguları yönetmede zorlanma</p>
+            </div>
+            <div class="bg-white p-5 rounded-xl border border-cream-300 shadow-soft">
+              <p class="text-dark-700 font-medium">İlişkilerde tekrar eden döngüler</p>
+            </div>
+            <div class="bg-white p-5 rounded-xl border border-cream-300 shadow-soft">
+              <p class="text-dark-700 font-medium">İşlevselliği azaltan içsel anlatılar</p>
+            </div>
           </div>
-          <div class="two-col-content">
-            <h3 class="text-lg font-medium text-dark mb-4">Bilişsel Davranışçı Terapi (BDT)</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 mb-8">
-              <p class="bullet-item">Yeme Bozuklukları</p>
-              <p class="bullet-item">Depresyon</p>
-              <p class="bullet-item">Panik Bozukluk</p>
-              <p class="bullet-item">Yaygın Kaygı Bozukluğu</p>
-              <p class="bullet-item">Sosyal Anksiyete Bozukluğu</p>
-              <p class="bullet-item">Obsesif Kompulsif Bozukluk (OKB)</p>
-              <p class="bullet-item">Travma Sonrası Stres Bozukluğu</p>
-              <p class="bullet-item">Fobiler</p>
-              <p class="bullet-item">Dikkat Eksikliği ve Hiperaktivite</p>
-              <p class="bullet-item">Somatoform Bozukluk</p>
-              <p class="bullet-item">Dürtü Kontrol Bozukluğu</p>
-            </div>
-            <h3 class="text-lg font-medium text-dark mb-4">Kabul ve Kararlılık Terapisi (ACT)</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">
-              <p class="bullet-item">Anksiyete ve Kaygı Temelli Sorunlar</p>
-              <p class="bullet-item">Depresif Belirtiler</p>
-              <p class="bullet-item">Duygusal Kaçınma ve Bastırma</p>
-              <p class="bullet-item">Yoğun Stres ve Tükenmişlik</p>
-              <p class="bullet-item">Değer Karmaşası ve Yaşam Yönü</p>
-              <p class="bullet-item">İlişkisel Problemler</p>
-              <p class="bullet-item">Kronik Ağrı ve Psikosomatik Yakınmalar</p>
-              <p class="bullet-item">Travma Sonrası Yaşantılar</p>
-              <p class="bullet-item">Öz-Şefkat ve Kendilik Algısı</p>
-              <p class="bullet-item">Dürtü Kontrolü ve Zorlayıcı Davranışlar</p>
-              <p class="bullet-item">Yaşam Doyumu ve Anlam Arayışı</p>
-            </div>
+
+          <div class="text-center mt-10">
+            <a href="calisma-alanlarim.html" class="btn-outline">Tüm Çalışma Alanları</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Aile Danışmanlığı Section -->
-    <section class="section-padding bg-cream-100 border-t border-cream-200">
+    <!-- Yaklaşım Section -->
+    <section class="section-padding bg-warm-100">
       <div class="container-custom">
-        <div class="two-col-section">
-          <div class="two-col-title">
-            <h2 class="section-title">Aile Danışmanlığı</h2>
-          </div>
-          <div class="two-col-content">
-            <p class="text-dark-600 leading-relaxed mb-6">
-              Aile danışmanlığı çalışmalarımda, bireylerin yalnızca kendileriyle değil, ait oldukları sistemle kurdukları ilişkileri de ele alarak; iletişim, sınırlar, roller ve duygusal etkileşim örüntüleri üzerinde çalışmaktayım.
+        <div class="max-w-3xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-semibold text-dark mb-8 text-center">Mesleki Yaklaşımım</h2>
+
+          <div class="space-y-6 text-dark-600 leading-relaxed">
+            <p>
+              Aile danışmanlığı çalışmalarımda, bireylerin yalnızca kendileriyle
+              değil, ait oldukları sistemle kurdukları ilişkileri de ele alarak;
+              iletişim, sınırlar, roller ve duygusal etkileşim örüntüleri
+              üzerinde çalışmaktayım.
             </p>
-            <p class="text-dark-600 leading-relaxed">
-              Mesleki duruşumun temelinde; psikolojiyi yalnızca tanı ve etiketler üzerinden değil, anlamlandırma, farkındalık ve işlevsellik üzerinden ele almak yer alır. Çünkü kişi çoğu zaman yaşadığı sorunun farkındadır; fakat neden tekrarlandığını ve nasıl değiştirilebileceğini bilmediği için sıkışır. Bilgi, farkındalık yaratır; farkındalık ise değişimin kapısını aralar.
+            <p>
+              Mesleki duruşumun temelinde; psikolojiyi yalnızca tanı ve
+              etiketler üzerinden değil, anlamlandırma, farkındalık ve
+              işlevsellik üzerinden ele almak yer alır.
+            </p>
+            <p class="bg-white p-6 rounded-xl border-l-4 border-dark-600 italic">
+              "Çünkü kişi çoğu zaman yaşadığı sorunun farkındadır; fakat neden
+              tekrarlandığını ve nasıl değiştirilebileceğini bilmediği için sıkışır.
+              Bilgi, farkındalık yaratır; farkındalık ise değişimin kapısını aralar."
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Terapiler Section -->
-    <section class="section-padding bg-cream-100 border-t border-cream-200">
+    <!-- CTA Section -->
+    <section class="py-16 bg-cream-100">
       <div class="container-custom">
-        <div class="two-col-section">
-          <div class="two-col-title">
-            <h2 class="section-title">Terapiler</h2>
-          </div>
-          <div class="two-col-content">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">
-              <p class="bullet-item">Bilişsel Davranışçı Terapi (BDT)</p>
-              <p class="bullet-item">Kabul ve Kararlılık Terapisi (ACT)</p>
-              <p class="bullet-item">Aile Danışmanlığı</p>
-            </div>
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-2xl md:text-3xl font-semibold text-dark mb-4">
+            Birlikte çalışmaya hazır mısınız?
+          </h2>
+          <p class="text-dark-600 mb-8">
+            Profesyonel destek almak için randevu oluşturabilirsiniz.
+          </p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="randevu.html" class="inline-block px-8 py-3 bg-dark text-white font-medium hover:bg-dark-700 transition-colors">
+              Randevu Al
+            </a>
+            <a href="calisma-alanlarim.html" class="btn-outline">
+              Çalışma Alanlarım
+            </a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="bg-cream-150 py-12 border-t border-cream-300">
       <div class="container-custom">
-        <div class="grid md:grid-cols-2 gap-8 items-start">
+        <div class="grid md:grid-cols-3 gap-8 items-start">
           <!-- Logo -->
           <div>
-            <a href="index.html" class="text-2xl md:text-3xl text-brand-gold" style="font-family: 'Great Vibes', cursive;">Psk. Merve Güngörür</a>
+            <a
+              href="index.html"
+              class="text-2xl md:text-3xl text-brand-gold"
+              style="font-family: 'Great Vibes', cursive"
+              >Psk. Merve Güngörür</a
+            >
+            <p class="text-dark-500 text-sm mt-3">Psikolog & Aile Danışmanı</p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h3 class="footer-title">Sayfalar</h3>
+            <div class="space-y-2">
+              <a href="hakkimda.html" class="footer-link">Hakkımda</a>
+              <a href="calisma-alanlarim.html" class="footer-link">Çalışma Alanlarım</a>
+              <a href="kose-yazilarim.html" class="footer-link">Köşe Yazılarım</a>
+              <a href="randevu.html" class="footer-link">Randevu</a>
+            </div>
           </div>
 
           <!-- Contact Info -->
           <div>
-            <h3 class="footer-title">Randevu</h3>
+            <h3 class="footer-title">İletişim</h3>
             <div class="space-y-3">
-              <a href="mailto:Gungorurdanismanlık@gmail.com" class="footer-link">
+              <a
+                href="mailto:Gungorurdanismanlık@gmail.com"
+                class="footer-link"
+              >
                 <svg
                   class="w-4 h-4"
                   fill="none"
@@ -306,7 +386,7 @@
         </div>
 
         <!-- Copyright -->
-        <div class="mt-6 pt-6 border-t border-brand-accent text-center">
+        <div class="mt-10 pt-6 border-t border-cream-300 text-center">
           <p class="text-dark-500 text-sm">
             © 2025 Psk. Merve Güngörür. Tüm hakları saklıdır.
           </p>
